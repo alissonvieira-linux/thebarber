@@ -10,16 +10,26 @@ export const Container = styled.View`
   `}
 `;
 
+export const Warning = styled.Text`
+  ${({ theme }) => css`
+    font-size: 13px;
+    color: ${theme.colors.light};
+    font-family: ${theme.fonts.regular};
+    align-self: flex-start;
+    margin-bottom: 20px;
+  `}
+`;
+
 export const WrapperInput = styled.View`
   margin-top: 18px;
   width: 100%;
 `;
 
-export const CreateAnAccount = styled.TouchableOpacity`
+export const Login = styled.TouchableOpacity`
   margin-top: 30px;
 `;
 
-export const DontHaveAccount = styled.Text`
+export const AlreadyHaveAccount = styled.Text`
   ${({ theme }) => css`
     color: ${theme.colors.primary_dark};
     font-family: ${theme.fonts.regular};
